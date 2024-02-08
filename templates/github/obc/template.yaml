@@ -7,8 +7,8 @@ metadata:
   tags:
     - obc
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
 
   parameters:
@@ -87,7 +87,7 @@ spec:
       name: Publishing to the Source Code Repository
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}-gitops
         defaultBranch: main

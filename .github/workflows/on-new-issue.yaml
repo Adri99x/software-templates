@@ -5,8 +5,8 @@ on:
 
 jobs:
   add-to-project:
-    # https://github.com/janus-idp/.github/blob/main/.github/workflows/add-to-project.yaml
-    uses: janus-idp/.github/.github/workflows/add-to-project.yaml@main
+    # https://github.com/adri-idp/.github/blob/main/.github/workflows/add-to-project.yaml
+    uses: adri-idp/.github/.github/workflows/add-to-project.yaml@main
     with:
       project_id: 2
     secrets: inherit

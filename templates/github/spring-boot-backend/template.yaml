@@ -10,8 +10,8 @@ metadata:
     - java
     - maven
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
 
   parameters:
@@ -64,8 +64,8 @@ spec:
         groupId:
           title: Group ID
           type: string
-          default: io.janus
-          description: Maven Group ID eg (io.janus)
+          default: io.adri
+          description: Maven Group ID eg (io.adri)
         artifactId:
           title: Artifact ID
           type: string
@@ -74,7 +74,7 @@ spec:
         javaPackageName:
           title: Java Package Namespace
           type: string
-          default: io/janus/spring-boot-app
+          default: io/adri/spring-boot-app
           description: Name for the Java Package (ensure to use the / character as this is used for folder structure) should match Group ID and Artifact ID
     - title: Provide information about the CI method
       required:
@@ -199,7 +199,7 @@ spec:
       name: Publishing to the Source Code Repository
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
         defaultBranch: main

@@ -8,8 +8,8 @@ metadata:
     - recommended
     - aap
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
   parameters:
     - title: Provide information about the GitHub location
@@ -106,7 +106,7 @@ spec:
       name: Publishing to Source Code Repository
       action: publish:github:pull-request
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         title: ${{ parameters.name }}-job
         description: ${{ parameters.name }}-job
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
@@ -116,7 +116,7 @@ spec:
       name: Registering the Catalog Info Component
       action: catalog:register
       input:
-        repoContentsUrl:  https://github.com/${{ parameters.githubOrg }}/${{ parameters.repoName }}/blob/${{ steps.publish.output.targetBranchName }}
+        repoContentsUrl: https://github.com/${{ parameters.githubOrg }}/${{ parameters.repoName }}/blob/${{ steps.publish.output.targetBranchName }}
         catalogInfoPath: /catalog-info.yaml
         optional: true
 

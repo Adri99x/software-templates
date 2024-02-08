@@ -8,8 +8,8 @@ metadata:
     - recommended
     - aap
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
   parameters:
     - title: Provide information about the GitHub location
@@ -131,7 +131,7 @@ spec:
       name: Publishing to Source Code Repository
       action: publish:github:pull-request
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         title: ${{ parameters.name }}-job-tmp
         description: ${{ parameters.name }}-job-tmp
         repoUrl: github.com?owner=${{ parameters.githubOrg }}&repo=${{ parameters.repoName }}

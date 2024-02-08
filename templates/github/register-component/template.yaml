@@ -9,8 +9,8 @@ metadata:
     - catalog
     - register
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
 
   parameters:
@@ -55,12 +55,12 @@ spec:
         componentType:
           title: Type
           type: string
-          description: 'The type of component. Well-known and common values: service, website, library.'
+          description: "The type of component. Well-known and common values: service, website, library."
           default: other
         componentLifecycle:
           title: Lifecycle
           type: string
-          description: 'The lifecycle state of the component. Well-known and common values: experimental, production, deprecated.'
+          description: "The lifecycle state of the component. Well-known and common values: experimental, production, deprecated."
           default: unknown
 
   steps:
@@ -108,5 +108,5 @@ spec:
 
   output:
     links:
-      - title: 'Open PR #${{ steps.publishPR.output.pullRequestNumber }}'
+      - title: "Open PR #${{ steps.publishPR.output.pullRequestNumber }}"
         url: ${{ steps.publishPR.output.remoteUrl }}

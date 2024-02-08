@@ -8,8 +8,8 @@ metadata:
     - recommended
     - argocd
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
 
   parameters:
@@ -85,7 +85,7 @@ spec:
         namespace:
           title: Namespace
           type: string
-          default: system:janus-idp
+          default: system:adri-idp
           description: The namespace for deploying resources
         hostUrl:
           title: Host URL
@@ -139,7 +139,7 @@ spec:
       name: Publishing to the Source Code Repository
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         description: Contains the ArgoCD manifests for ${{ parameters.repoName }}
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}-gitops
         defaultBranch: main

@@ -10,8 +10,8 @@ metadata:
     - flask
     - gitlab
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
 
   parameters:
@@ -91,7 +91,7 @@ spec:
       name: Publishing to the Source Code Repository
       action: publish:gitlab
       input:
-        allowedHosts: ['gitlab.com']
+        allowedHosts: ["gitlab.com"]
         description: ${{ parameters.description }}
         repoUrl: gitlab.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
         defaultBranch: main

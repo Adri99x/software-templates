@@ -9,8 +9,8 @@ metadata:
     - java
     - maven
 spec:
-  owner: janus-authors
-  system: janus-idp
+  owner: adri-authors
+  system: adri-idp
   type: service
 
   parameters:
@@ -64,14 +64,14 @@ spec:
         groupId:
           title: Group ID
           type: string
-          default: io.janus
-          description: Maven Group ID eg (io.janus)
+          default: io.adri
+          description: Maven Group ID eg (io.adri)
         artifactId:
           title: Artifact ID
           type: string
           default: quarkusapp
           description: Maven Artifact ID
-        version: 
+        version:
           title: Version
           type: string
           default: 1.0.0-SNAPSHOT
@@ -79,8 +79,8 @@ spec:
         javaPackageName:
           title: Java Package Namespace
           type: string
-          default: io.janus.quarkusapp
-          description: Name for the Java Package (e.g. io.janus.quarkusapp) should match Group ID and Artifact ID
+          default: io.adri.quarkusapp
+          description: Name for the Java Package (e.g. io.adri.quarkusapp) should match Group ID and Artifact ID
     - title: Provide information about the CI method
       required:
         - ci
@@ -205,7 +205,7 @@ spec:
       name: Publishing to the Source Code Repository
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ["github.com"]
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.repoName }}
         defaultBranch: main
