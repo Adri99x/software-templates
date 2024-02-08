@@ -7,8 +7,8 @@ metadata:
   tags:
     - obc
 spec:
-  owner: adri-authors
-  system: adri-idp
+  owner: yovin
+  system: 99x-idp
   type: service
 
   parameters:

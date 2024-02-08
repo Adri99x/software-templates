@@ -8,8 +8,8 @@ metadata:
     - recommended
     - aap
 spec:
-  owner: adri-authors
-  system: adri-idp
+  owner: hasith
+  system: 99x-idp
   type: service
   parameters:
     - title: Provide information about the GitHub location

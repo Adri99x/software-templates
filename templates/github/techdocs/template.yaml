@@ -8,8 +8,8 @@ metadata:
     - documentation
     - techdocs
 spec:
-  owner: adri-authors
-  system: adri-idp
+  owner: sachith
+  system: 99x-idp
   type: service
 
   parameters:

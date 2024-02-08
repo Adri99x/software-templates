@@ -8,8 +8,8 @@ metadata:
     - ci
     - tekton
 spec:
-  owner: adri-authors
-  system: adri-idp
+  owner: hasith
+  system: 99x-idp
   type: service
 
   parameters:

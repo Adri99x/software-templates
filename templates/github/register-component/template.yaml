@@ -9,8 +9,8 @@ metadata:
     - catalog
     - register
 spec:
-  owner: adri-authors
-  system: adri-idp
+  owner: janaka
+  system: 99x-idp
   type: service
 
   parameters:

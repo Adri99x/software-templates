@@ -11,8 +11,8 @@ metadata:
     - typescript
     - express
 spec:
-  owner: adri-authors
-  system: adri-idp
+  owner: yohan
+  system: 99x-idp
   type: service
 
   parameters:
