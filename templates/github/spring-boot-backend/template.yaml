@@ -10,7 +10,7 @@ metadata:
     - java
     - maven
 spec:
-  owner: hasith
+  owner: user:hasith
   system: 99x-idp
   type: service
 

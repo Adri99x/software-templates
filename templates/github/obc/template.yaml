@@ -7,7 +7,7 @@ metadata:
   tags:
     - obc
 spec:
-  owner: yovin
+  owner: user:yovin
   system: 99x-idp
   type: service
 

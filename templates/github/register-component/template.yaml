@@ -9,7 +9,7 @@ metadata:
     - catalog
     - register
 spec:
-  owner: janaka
+  owner: user:janaka
   system: 99x-idp
   type: service
 

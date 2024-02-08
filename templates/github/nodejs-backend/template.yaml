@@ -11,7 +11,7 @@ metadata:
     - typescript
     - express
 spec:
-  owner: yohan
+  owner: user:yohan
   system: 99x-idp
   type: service
 

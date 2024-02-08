@@ -10,7 +10,7 @@ metadata:
     - flask
     - gitlab
 spec:
-  owner: adri
+  owner: user:adri
   system: 99x-idp
   type: service
 
